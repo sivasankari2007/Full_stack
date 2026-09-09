@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 32px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-box button {
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-box button:hover {
+    background-color: #555;
+}
+
+#loading {
+    color: white;
+    font-size: 16px;
+    margin: 10px;
+}
+
+#errorMessage {
+    color: #b00020;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+    display: none;
+}
+
+.weather-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.weather-card h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.weather-icon {
+    font-size: 70px;
+    margin: 10px;
+}
+
+.weather-card h3 {
+    font-size: 45px;
+    margin: 10px;
+}
+
+#condition {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.detail-box {
+    background-color: #f2f2f2;
+    padding: 15px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.detail-box span {
+    font-size: 25px;
+}
+
+.detail-box p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.detail-box strong {
+    font-size: 18px;
+}
+
+@media (max-width: 500px) {
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .details {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+}
